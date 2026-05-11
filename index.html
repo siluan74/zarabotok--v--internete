@@ -3,21 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CryptoWay - Заработок на кранах и буксах</title>
+    <title>CryptoWay — Заработок без вложений</title>
     <style>
-        body { font-family: 'Segoe UI', sans-serif; background: #0f172a; color: #f8fafc; margin: 0; }
-        header { background: linear-gradient(90deg, #1e293b, #334155); padding: 20px; text-align: center; border-bottom: 2px solid #38bdf8; }
-        .container { max-width: 800px; margin: 20px auto; padding: 0 15px; }
-        .card { background: #1e293b; border-radius: 12px; padding: 20px; margin-bottom: 20px; border: 1px solid #334155; transition: 0.3s; }
-        .card:hover { border-color: #38bdf8; transform: translateY(-5px); }
-        h1 { color: #38bdf8; margin: 0; }
-        .badge { background: #38bdf8; color: #0f172a; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: bold; }
-        .btn { display: inline-block; background: #38bdf8; color: #0f172a; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; margin-top: 10px; }
-        .info { font-size: 0.9em; color: #94a3b8; }
+        /* Основные стили */
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #0f172a; 
+            color: #f8fafc; 
+            margin: 0; 
+            line-height: 1.6;
+            scroll-behavior: smooth; /* Плавная прокрутка */
+        }
+
+        /* Меню */
+        nav {
+            background: #1e293b;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid #38bdf8;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: #38bdf8;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        nav a:hover { color: #f8fafc; }
+
+        /* Шапка */
+        header {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 1px solid #334155;
+        }
+        header h1 { color: #38bdf8; margin: 0; font-size: 3rem; }
+        header p { color: #94a3b8; font-size: 1.2rem; }
+
+        /* Контент */
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+        
+        .section-title {
+            color: #38bdf8;
+            border-left: 4px solid #38bdf8;
+            padding-left: 15px;
+            margin-top: 50px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+        }
+
+        /* Карточки */
+        .card {
+            background: #1e293b;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border: 1px solid #334155;
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            border-color: #38bdf8;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .card h2 { margin-top: 10px; color: #f1f5f9; }
+        
+        .badge {
+            background: #38bdf8;
+            color: #0f172a;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #38bdf8;
+            color: #0f172a;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: 0.2s;
+        }
+        .btn:hover { background: #7dd3fc; }
+
+        footer { text-align: center; padding: 40px; color: #475569; font-size: 0.9rem; }
     </style>
 </head>
 <body>
 
-<a href="#games" style="color: #38bdf8; text-decoration: none; margin: 0 15px; font-weight: bold;">Игры</a>
+    <!-- НАВИГАЦИЯ -->
+    <nav>
+        <a href="#faucets">1. Faucet Crypto</a>
+        <a href="#bux">2. Bux</a>
+        <a href="#games">3. Game</a>
+    </nav>
 
+    <header>
+        <h1>CryptoWay 🚀</h1>
+        <p>Зарабатывай криптовалюту на автомате и без вложений</p>
+    </header>
+
+    <div class="container">
+
+        <!-- 1. РАЗДЕЛ FAUCET CRYPTO -->
+        <h2 id="faucets" class="section-title">1. Faucet Crypto (Краны)</h2>
+        
+        <div class="card">
+            <span class="badge">БЕЗ ТАЙМЕРА</span>
+            <h2>Multi-Coin Faucet</h2>
+            <p>Собирай TON, Litecoin и Solana каждые несколько минут. Простые задания и моментальные выплаты на FaucetPay.</p>
+            <a href="#" class="btn">Начать сбор монет</a>
+        </div>
+
+        <div class="card">
+            <span class="badge">НАДЕЖНО</span>
+            <h2>FreeLitecoin</h2>
+            <p>Старейший кран для накопления Литош. Бонусы каждый час и возможность приумножить баланс в играх.</p>
+            <a href="#" class="btn">Зайти на кран</a>
+        </div>
+
+        <!-- 2. РАЗДЕЛ BUX -->
+        <h2 id="bux" class="section-title">2. Bux (Буксы)</h2>
+        
+        <div class="card">
+            <span class="badge">МОЙ ВЫБОР</span>
+            <h2>adBTC — Серфинг сайтов</h2>
+            <p>Лучший букс для заработка Сатоши. Просто открывай сайты рекламодателей и получай оплату в Биткоинах.</p>
+            <a href="https://adbtc.top" target="_blank" class="btn">Открыть adBTC</a>
+        </div>
+
+        <div class="card">
+            <span class="badge">МНОГО ЗАДАНИЙ</span>
+            <h2>CoinPayU</h2>
+            <p>Огромное количество рекламных ссылок и офферволов. Стабильные выплаты на любые кошельки.</p>
+            <a href="#" class="btn">Перейти к просмотру</a>
+        </div>
+
+        <!-- 3. РАЗДЕЛ GAME -->
+        <h2 id="games" class="section-title">3. Game (Игры)</h2>
+        
+        <div class="card">
+            <span class="badge">PLAY-TO-EARN</span>
+            <h2>RollerCoin</h2>
+            <p>Симулятор майнинга. Ты играешь в ретро-игры, а твоя виртуальная ферма добывает реальные токены.</p>
+            <a href="#" class="btn">Начать майнить</a>
+        </div>
+
+        <div class="card">
+            <span class="badge">HOT</span>
+            <h2>Telegram Mini Apps</h2>
+            <p>Blum, Hamster и другие топовые проекты. Заходи каждый день, выполняй задания и копи баллы для будущего дропа.</p>
+            <a href="#" class="btn">Список ботов</a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 CryptoWay | Реальность на 100%</p>
+    </footer>
+
+</body>
 </html>
